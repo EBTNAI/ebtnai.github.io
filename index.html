@@ -15,26 +15,38 @@
         }
 
         .centered {
-            text-align: center;
-            width: max-content;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        .title, .subtitle {
+            display: flex;
+            justify-content: center;
         }
 
         h1 {
             font-family: 'Playfair Display', serif;
             font-size: 2.5em;
             margin: 0;
+            width: 100%;
         }
 
         h2 {
             font-size: 1.5em;
             margin: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
     <div class="centered">
-        <h1>EBTN</h1>
-        <h2>The AI Adoption Company</h2>
+        <div class="title">
+            <h1>EBTN</h1>
+        </div>
+        <div class="subtitle">
+            <h2>The AI Adoption Company</h2>
+        </div>
     </div>
 </body>
 </html>
